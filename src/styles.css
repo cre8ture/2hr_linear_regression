@@ -1,0 +1,95 @@
+/* Reset default margins and paddings */
+body,
+h1,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a black background and white text for the entire page */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.iterations {
+  display: block;
+  padding: 10px;
+  gap: 10px;
+}
+/* Style the textarea */
+#csvInput {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  padding: 10px;
+  resize: none;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-family: monospace; /* Use a monospace font for code-like appearance */
+}
+
+/* Style the file input and label */
+#fileInput {
+  /* display: none; Hide the default file input */
+  padding: 10px;
+}
+
+#loadSampleData {
+  display: block;
+  margin: 10px 10px; /* 10px top and bottom, 0px left and right */
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+#fileInputLabel {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* Style the custom file input button */
+#chooseFileButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff; /* Add border around the button */
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Style the "Run Linear Regression" button */
+#runRegression {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff; /* Add border around the button */
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Style the graph container */
+#graphContainer {
+  /* Add styling for your graph here */
+}

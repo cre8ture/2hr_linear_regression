@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Linear Regression Visualization</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Linear Regression Visualization</h1>
+    <textarea id="csvInput" placeholder="Paste CSV data here..."></textarea>
+    <label class="upload-label"
+      >(optionally, you can also upload a .csv file)</label
+    >
+    <input type="file" id="fileInput" accept=".csv" />
+<!-- Add an input field for the number of iterations -->
+<div class='iterations'>
+<label for="iterations">Number of Iterations:</label>
+<input type="number" id="iterations" placeholder="Enter the number of iterations" value="20" />
+</div>
+  <button id="loadSampleData">Load Sample Data</button> 
+    <button id="runRegression">Run Linear Regression</button>
+  </div>
+  <div id="iterationResult"></div>
+    <div id="graphContainer">
+      <!-- Graph will be displayed here -->
+      <div id="lossChart"></div>
+
+    </div>
+
+    <!-- Include Redux script from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+    <!-- Include your JavaScript file -->
+    <script src="store.js"></script>
+    <script src="linearRegression.js"></script>
+
+  </body>
+</html>
